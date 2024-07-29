@@ -9,7 +9,7 @@ const session = await getSession(Astro.request)
 ---
 
 <Layout
-	title="vDx Dashboard"
+	title="Sign In"
 >
 	<main class="flex flex-col items-center justify-center text-white">
 		{session === null ? <Intro /> : <Vote user={session.user} />}
